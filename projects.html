@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Projects | Funngro</title>
+    <meta name="description" content="Find exciting projects and freelance opportunities on Funngro. Browse by category, budget, and skills.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Funngro</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="company.html">For Companies</a></li>
+                <li><a href="teen.html">For Teens</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find Your Next Project</h1>
+            <p>Browse thousands of projects from companies looking for talented teens like you.</p>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search projects...">
+                <button id="search-btn" class="btn-primary"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </section>
+
+        <div class="projects-content">
+            <aside class="filters">
+                <h3>Filters</h3>
+                <div class="filter-group">
+                    <h4>Category</h4>
+                    <label><input type="checkbox" value="tech"> Tech</label>
+                    <label><input type="checkbox" value="marketing"> Marketing</label>
+                    <label><input type="checkbox" value="design"> Design</label>
+                    <label><input type="checkbox" value="research"> Research</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Budget</h4>
+                    <label><input type="radio" name="budget" value="all"> All</label>
+                    <label><input type="radio" name="budget" value="low"> $10 - $25</label>
+                    <label><input type="radio" name="budget" value="medium"> $25 - $50</label>
+                    <label><input type="radio" name="budget" value="high"> $50+</label>
+                </div>
+                <div class="filter-group">
+                    <h4>Duration</h4>
+                    <label><input type="radio" name="duration" value="all"> All</label>
+                    <label><input type="radio" name="duration" value="short"> 1-3 days</label>
+                    <label><input type="radio" name="duration" value="medium"> 1-2 weeks</label>
+                    <label><input type="radio" name="duration" value="long"> 2+ weeks</label>
+                </div>
+            </aside>
+
+            <section class="projects-grid">
+                <div class="project-card" data-category="tech" data-budget="medium" data-duration="medium">
+                    <h3>Mobile App Testing</h3>
+                    <p>Help test a new mobile app for bugs and usability issues.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-dollar-sign"></i> $35</span>
+                        <span><i class="fas fa-clock"></i> 1 week</span>
+                        <span><i class="fas fa-tags"></i> Tech</span>
+                    </div>
+                    <button class="btn-primary apply-btn">Apply Now</button>
+                </div>
+                <div class="project-card" data-category="marketing" data-budget="low" data-duration="short">
+                    <h3>Social Media Content Creation</h3>
+                    <p>Create engaging social media posts for a fashion brand.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-dollar-sign"></i> $20</span>
+                        <span><i class="fas fa-clock"></i> 3 days</span>
+                        <span><i class="fas fa-tags"></i> Marketing</span>
+                    </div>
+                    <button class="btn-primary apply-btn">Apply Now</button>
+                </div>
+                <div class="project-card" data-category="design" data-budget="high" data-duration="long">
+                    <h3>Logo Design for Startup</h3>
+                    <p>Design a modern logo for a tech startup.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-dollar-sign"></i> $60</span>
+                        <span><i class="fas fa-clock"></i> 2 weeks</span>
+                        <span><i class="fas fa-tags"></i> Design</span>
+                    </div>
+                    <button class="btn-primary apply-btn">Apply Now</button>
+                </div>
+                <div class="project-card" data-category="research" data-budget="medium" data-duration="medium">
+                    <h3>Market Research Analysis</h3>
+                    <p>Conduct research on emerging trends in e-commerce.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-dollar-sign"></i> $40</span>
+                        <span><i class="fas fa-clock"></i> 1 week</span>
+                        <span><i class="fas fa-tags"></i> Research</span>
+                    </div>
+                    <button class="btn-primary apply-btn">Apply Now</button>
+                </div>
+                <div class="project-card" data-category="tech" data-budget="low" data-duration="short">
+                    <h3>Website Bug Fixes</h3>
+                    <p>Fix minor bugs on an e-commerce website.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-dollar-sign"></i> $15</span>
+                        <span><i class="fas fa-clock"></i> 2 days</span>
+                        <span><i class="fas fa-tags"></i> Tech</span>
+                    </div>
+                    <button class="btn-primary apply-btn">Apply Now</button>
+                </div>
+                <div class="project-card" data-category="marketing" data-budget="medium" data-duration="medium">
+                    <h3>Email Campaign Design</h3>
+                    <p>Design templates for an email marketing campaign.</p>
+                    <div class="project-meta">
+                        <span><i class="fas fa-dollar-sign"></i> $45</span>
+                        <span><i class="fas fa-clock"></i> 1 week</span>
+                        <span><i class="fas fa-tags"></i> Marketing</span>
+                    </div>
+                    <button class="btn-primary apply-btn">Apply Now</button>
+                </div>
+            </section>
+        </div>
+
+        <section class="cta">
+            <h2>Ready to Post a Project?</h2>
+            <p>Join companies hiring teen talent or check our pricing plans.</p>
+            <div class="cta-buttons">
+                <a href="company.html" class="btn-primary">For Companies</a>
+                <a href="pricing.html" class="btn-secondary">View Pricing</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Funngro. Empowering teens and businesses.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>
